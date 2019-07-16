@@ -1,0 +1,18 @@
+<!--page/tailoring/index.wxml-->
+<view class="image_list">
+    <image wx:for="{{images}}" wx:key="{{item}}" mode="aspectFit" src="{{item}}"></image>
+</view>
+<view class="upload_bt" bindtap="getPhoto">
+    上传裁剪图片
+</view>
+<view
+    hidden="{{!showCropperPhoto}}" 
+    class="batch_tailoring_s">
+    <batch-tailoring 
+        class="batch_tailoring"
+        imageSrc="{{cropperPhotoImg}}" 
+        imagelimit="{{imagelimit-photoPaths.length}}"
+        ratio="{{1}}"
+        bindcancelcreateimg="closePhotoImages" 
+        bindcreateimg="uploadPhotoImages"></batch-tailoring>
+</view>

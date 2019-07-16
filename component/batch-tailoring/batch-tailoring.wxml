@@ -1,0 +1,31 @@
+<!--components/batch-tailoring/batch-tailoring.wxml-->
+<view class="batch_tailoring" id="editer">
+    <view class="tailoring_c" style="height:{{tailoringsize.height}}px;">
+        <view class="tailoring_img_b {{selectindex==index?'tailoring_select':''}}" wx:for="{{images}}" wx:key="item" catchtouchstart='startTouch' catchtouchmove="moveTouch" catchtouchend="endTouch">
+            <canvas canvas-id='canvas{{index}}' class="tailoring_img_c tailoring_canvas{{index}}">                
+                <cover-view wx:if="{{spacewidth}}" style="width:{{spacewidth}}px; left:0;" class="black_cover"></cover-view>
+                <cover-view wx:if="{{spacewidth}}" style="width:{{spacewidth}}px; right:0;" class="black_cover"></cover-view>
+                <cover-view bindtap="changeStatus" class="tailoring_status">
+                    <cover-image class="tailoring_status_img" src="{{images[selectindex].status?'http://res.rtmap.com/wx/guide/index/cut_full.png':'http://res.rtmap.com/wx/guide/index/cut_white.png'}}"></cover-image>
+                    <cover-view class="tailoring_status_bt">{{images[selectindex].status?'充满':'留白'}}</cover-view>
+                </cover-view>
+                <cover-view bindtap="subImg" class="tailoring_submit">确定({{selectlength}})</cover-view>
+            </canvas>
+        </view>
+    </view>
+    <scroll-view 
+        class="image_list_s"
+        style="height:{{editsize.height-tailoringsize.height}}px"
+        scroll-y
+    >
+        <view class="image_list_c">
+            <view class="image_list_u" bindtap="addImage">
+                <image src="http://res.rtmap.com/wx/guide/index/photo@2x.png" mode="scaleToFill"></image>
+            </view>
+            <view class="image_list_i" bindtap="selectImg" wx:for="{{images}}" wx:key="item" data-index="{{index}}">
+                <view class="image_list_bt {{item.index?'image_list_sl':''}}" catchtap="chooseImg" data-index="{{index}}">{{item.index}}</view>
+                <image class="image_list_image" src="{{item.src}}" mode="aspectFit"></image>
+            </view>
+        </view>
+    </scroll-view>
+</view>

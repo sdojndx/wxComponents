@@ -1,0 +1,13 @@
+/* page/index/index.wxss */
+
+navigator{
+    width:700rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-radius: 8rpx;
+    display: block;
+    margin: 20rpx auto;
+    text-indent: 20rpx;
+    color:black;
+    background:#ccc;
+}

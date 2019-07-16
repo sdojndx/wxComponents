@@ -1,0 +1,168 @@
+/* components/batch-tailoring/batch-tailoring.wxss */
+.batch_tailoring{
+    width: 100%;
+    height: 100%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+.tailoring_c{
+    overflow: hidden;
+    position: relative;
+    background: url(http://res.rtmap.com/wx/guide/index/touming.png);
+}
+.tailoring_img_b{
+    position: absolute;
+    top:0rpx;
+    left:-100%;
+    width:100%;
+    height: 100%;
+}
+.tailoring_select{
+    left:0rpx;
+}
+.tailoring_img_c{
+    width:100%;
+    height:100%;
+}
+/* .tailoring_b{
+    margin:0 auto;
+    border:1px solid rgba(255,255,255,0.6);
+    position:relative;
+    z-index:1;
+}
+
+.tailoring_b_x{
+    width:100%;
+    height: 33%;
+    top:33.3%;
+    left:0;
+    border-top:1px solid rgba(255,255,255,0.6);
+    border-bottom:1px solid rgba(255,255,255,0.6);
+    position: absolute;
+}
+.tailoring_b_y{
+    height:100%;
+    width: 33%;
+    top:0;
+    left:33.3%;
+    border-left:1px solid rgba(255,255,255,0.6);
+    border-right:1px solid rgba(255,255,255,0.6);
+    position: absolute;
+} */
+.tailoring_status{
+    position: absolute;
+    z-index: 1;
+    width:112rpx;
+    height: 48rpx;
+    line-height: 48rpx;
+    left:32rpx;
+    bottom:32rpx;
+    border-radius: 25rpx;
+    background:rgba(0,0,0,0.4);
+    border:1rpx solid rgba(255,255,255,0.2);
+    font-size:24rpx;
+    color:white;
+    display: flex;
+    align-items: center;
+
+    /* background-size:24rpx 24rpx;
+    background-repeat: no-repeat;
+    background-position: 12rpx 12rpx;
+    background-image:url(http://res.rtmap.com/wx/guide/index/cut_full.png); */
+}
+.tailoring_status_img{
+    margin-left:12rpx;
+    display: inline-block;
+    width:24rpx;
+    height:24rpx;
+}
+.tailoring_status_bt{
+    margin:0rpx;
+    margin-left:5rpx;
+    font-size:24rpx;
+    color:white;
+    display: inline-block;
+    height: 48rpx;
+    line-height: 48rpx;
+    background: transparent;
+}
+.tailoring_status_bt::after {
+  border: 0; 
+}
+/* .tailoring_status_white{
+    background-image:url(http://res.rtmap.com/wx/guide/index/cut_white.png);
+} */
+.tailoring_submit{
+    position: absolute;
+    z-index: 1;
+    width:112rpx;
+    height: 48rpx;
+    line-height: 48rpx;
+    right:32rpx;
+    bottom:32rpx;
+    border-radius: 25rpx;
+    background:rgba(0,0,0,0.4);
+    border:1rpx solid rgba(255,255,255,0.2);
+    font-size:24rpx;
+    color:white;
+    text-align: center;
+}
+.image_list_s{
+    background: white;
+    flex:1;
+}
+.image_list_c{
+    display: flex;
+    flex-wrap: wrap;
+}
+.image_list_u{    
+    width:25%;
+    height:187.5rpx;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1rpx solid black;
+    box-sizing:border-box;
+}
+.image_list_u image{
+    width:72rpx;
+    height: 72rpx;
+}
+.image_list_i{
+    width:25%;
+    height:187.5rpx;
+    border:1rpx solid black;
+    box-sizing:border-box;
+    position: relative;
+}
+.image_list_bt{
+    position: absolute;
+    top:14rpx;
+    right:14rpx;
+    width: 32rpx;
+    height: 32rpx;
+    line-height: 32rpx;
+    font-size:24rpx;
+    text-align: center;
+    border:1px solid white;
+    color:white;
+    border-radius: 17rpx;
+    background:rgba(0,0,0,0.4);
+}
+.image_list_sl{
+    border-color:#E41335;
+    background:#E41335;
+}
+.image_list_image{
+    width:100%;
+    height:100%;
+}
+.black_cover{
+    background:rgba(0,0,0,0.6);
+    position: absolute;
+    z-index:1;
+    top:0;
+    height: 100%;
+}

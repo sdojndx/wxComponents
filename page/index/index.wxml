@@ -1,0 +1,4 @@
+<!--page/index/index.wxml-->
+<navigator url="/page/tailoring/index">
+    图片裁剪组件
+</navigator>
