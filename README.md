@@ -17,3 +17,6 @@
 | 参数 | 说明 | 备注 |
 |:-|:-:|-:|
 |createimg|Array| 裁剪后的图片 |
+ 
+ ![实例图片](https://github.com/sdojndx/my-blog/blob/master/images/demo.gif?raw=true "demo.gif")
+ 
