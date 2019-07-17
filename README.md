@@ -1,4 +1,4 @@
-# wxComponnts
+# wxComponents
 微信小程序组件
 
 ## batch-tailoring
